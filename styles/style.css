@@ -47,7 +47,6 @@ nav ul li a {
 nav ul li a:hover {
   color: #df9c61;
   transform: translateY(1px);
-  /*Turun5pxsaathover*/:;
   -webkit-transform: translateY(1px);
   -moz-transform: translateY(1px);
   -ms-transform: translateY(1px);
