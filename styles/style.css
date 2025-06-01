@@ -40,10 +40,22 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+  display: inline-block; /* Penting untuk transform */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #df9c61;
+  transform: translateY(1px);
+  /*Turun5pxsaathover*/:;
+  -webkit-transform: translateY(1px);
+  -moz-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  -o-transform: translateY(1px);
 }
 
 .btn-login .login-btn {
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
   font-weight: bold;
   font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
   background-color: #EFEFEF;
@@ -51,10 +63,37 @@ nav ul li a {
   border-radius: 5px;
   cursor: pointer;
   color: #512F2F;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #512F2F;
+}
+
+.login-btn:hover {
+    color: #873F00;
+    text-decoration: none;
+}
+.btn-login {
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    transform: scale(0.95);
+    
+}
+/* Login Icon */
+.btn-login i {
+    color: #512F2F;
+    font-size: 18px;
 }
 
 /* Section Hero */
@@ -120,11 +159,18 @@ nav ul li a {
     /* padding: 10px 40px; */
 }
 
-.button > a {
+.menu > a {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.menu:hover {
+    background-color: #cfb7a1;
     text-decoration: none;
 }
 
-.button > .btn-menu {
+.button > .menu {
     padding: 10px 30px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
@@ -140,7 +186,12 @@ nav ul li a {
     -o-border-radius: 5px;
 }
 
-.button > .btn-reserv {
+.reserv > a {
+    text-decoration: none;
+    color: #873F00;
+}
+
+.button > .reserv {
     padding: 10px 30px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
