@@ -1,0 +1,156 @@
+*,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header & Nav */
+
+body {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: black;
+}
+
+nav {
+    background-color: #978676;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    width: auto;
+    height: 76px;
+}
+
+.logo h2 {
+    color: white;
+    font-family: 'Inter', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.btn-login .login-btn {
+  padding: 10px 30px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+  background-color: #EFEFEF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #512F2F;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* Section Hero */
+
+.hero-section {
+    position: relative;
+    background-image: url(/img/main-bg.jpg);
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    /* opacity: 0.5; */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* ini buat gelapinnya */
+  z-index: 1;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+
+    position: relative;
+    z-index: 2; /* biar muncul di atas overlay */
+    text-align: center;
+    color: white;
+    /* padding-top: 20vh; ganggu ini woi*/
+}
+
+.hero-content h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.hero-content p {
+    color: white;
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* Button Hero */
+.button {
+    margin-top: 27px;
+    display: flex; /* ini penting banget */
+    justify-content: center; /* opsional, biar tombolnya ketengah */
+    align-items: center;
+    margin-top: 27px;
+    gap: 7px;
+    /* padding: 10px 40px; */
+}
+
+.button > a {
+    text-decoration: none;
+}
+
+.button > .btn-menu {
+    padding: 10px 30px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: #E59652A8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.button > .btn-reserv {
+    padding: 10px 30px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    background-color: #EFEFEFA8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #873F00;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
