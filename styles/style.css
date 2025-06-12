@@ -103,7 +103,7 @@ nav ul li a:hover {
 
 .hero-section {
     position: relative;
-    background-image: url(/img/main-bg.jpg);
+    background-image: url(../img/main-bg.jpg);
     /* background-repeat: no-repeat;
     background-attachment: fixed; */
     background-size: cover;
