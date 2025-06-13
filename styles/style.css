@@ -7,7 +7,8 @@
 
 body {
     /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: black;
+    background-color: #EFEFEF;
+
 }
 
 /* Header & Nav */
@@ -42,12 +43,16 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-  display: inline-block; /* Penting untuk transform */
-  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  transition: all ease-in-out .4s;
+  -webkit-transition: all ease-in-out .4s;
+  -moz-transition: all ease-in-out .4s;
+  -ms-transition: all ease-in-out .4s;
+  -o-transition: all ease-in-out .4s;
 }
 
 nav ul li a:hover {
-  color: #e6d9b6;
+  color: #d4cdcd;
   transform: translateY(1px);
   -webkit-transform: translateY(1px);
   -moz-transform: translateY(1px);
@@ -56,10 +61,6 @@ nav ul li a:hover {
 }
 
 /* Navbar - Button */
-.btn-login:hover {
-    /* background-color: orange; */
-}
-
 
 .btn-login .login-btn {
   /* padding: 10px 30px; */
@@ -222,6 +223,7 @@ nav ul li a:hover {
 }
 
 /* Section Card */
+
 .card-section {
     padding: 50px 0;
     background-color: #EFEFEF;
@@ -230,21 +232,21 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 8rem;
+    margin-top: 6rem;
 }
 
 .card-section > h2 {
-    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 30px;
+    font-family: 'Playfair Display', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
     color: #512F2F;
     margin-bottom: 10px;
 }
 
 .card-section > p {
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
     color: #474747;
     margin-bottom: 30px;
 }
@@ -266,12 +268,23 @@ nav ul li a:hover {
     padding: 2rem;
 }
 
+.card > i {
+    background-color: #FDFDE4;
+    font-size: 30px;
+    color: #EABD42;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
 .card > h3 {
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #512F2F;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 15px;
 }
 
 .card > p {
@@ -279,5 +292,96 @@ nav ul li a:hover {
     font-size: 12px;
     font-weight: 600;
     color: #474747;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+/* Menu section card */
+
+.menu-section {
+    background-color: #EFEFEF;
+    /* margin: 0; */
+    margin-top: 6rem;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-section > h2 {
+    font-family: 'Playfair Display', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #512F2F;
+    margin-bottom: 10px;
+}
+
+.menu-section > p {
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #474747;
+    margin-bottom: 15px;
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.menu-card > img {
+    object-fit: cover;
+    width: 480px;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.menu-card > img:hover {
+    box-shadow: 3px 9px 10px 1px #524e4e;
+}
+
+.menu-card > h3 {
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #512F2F;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.menu-card > p {
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.menu-btn {
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: #512f2fe0;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin-top: 1rem;
+    color: white;
+    transition: all .3s ease-in-out;
+    /* gap: 1rem; */
+}
+
+.menu-btn > a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-btn:hover {
+    transform: translateY(2px);
+    background-color: #512f2fc0;
 }
