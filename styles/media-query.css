@@ -44,6 +44,10 @@
         cursor: none;
     }
 
+    nav ul li a:hover {
+        border-bottom: none;
+    }
+
     /* List bar */
     nav ul.show {
         display: flex;
