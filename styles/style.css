@@ -70,15 +70,15 @@ nav ul li a {
   color: white;
   font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
   display: inline-block;
-  transition: all ease-in .2s;
-  -webkit-transition: all ease-in .2s;
-  -moz-transition: all ease-in .2s;
-  -ms-transition: all ease-in .2s;
-  -o-transition: all ease-in .2s;
+  transition: all ease-in-out .1s;
+  -webkit-transition: all ease-in-out .1s;
+  -moz-transition: all ease-in-out .1s;
+  -ms-transition: all ease-in-out .1s;
+  -o-transition: all ease-in-out .1s;
 }
 
 nav ul li a:hover {
-    border-bottom: #706262 2px solid;
+    /* border-bottom: #706262 2px solid; */
   color: #d4cdcd;
   transform: translateY(1px);
   -webkit-transform: translateY(1px);
@@ -265,7 +265,7 @@ nav ul li a:hover {
 
 .card-section > h2 {
     font-family: 'Playfair Display', sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 32px;
     color: #512F2F;
     margin-bottom: 10px;
@@ -274,12 +274,12 @@ nav ul li a:hover {
 .card-section > p {
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 400;
     color: #474747;
     margin-bottom: 30px;
 }
 
-.card-content {
+.card-content { /* keseluruhan cardnya */
     /* padding-bottom: 2rem; */
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); */
@@ -294,7 +294,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.card {
+.card { /* Isi cardnya */
     background-color: #FEFEF6;
     border-radius: 8px;
     padding: 2rem;
@@ -315,7 +315,7 @@ nav ul li a:hover {
 
 .card > h3 {
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     color: #512F2F;
     margin-bottom: 5px;
@@ -325,7 +325,7 @@ nav ul li a:hover {
 .card > p {
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     color: #474747;
     margin-bottom: 10px;
 }
@@ -521,6 +521,7 @@ nav ul li a:hover {
 /* Section Testimoni */
 
 .testimoni {
+    padding-block: 6rem;
     background-color: #EFEFEF;
     text-align: center;
     margin-top: 1rem;
@@ -534,7 +535,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.card-testi {
+.card-testi { /* keseluruhan cardnya */
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -544,22 +545,24 @@ nav ul li a:hover {
     padding: 2rem;
     margin: auto;
     border-radius: 10px;
+    padding-top: 2rem;
 }
 
-.card-content2 {
+.card-content2 { /* Isi cardnya */
     text-align: left;
     background-color: #FEFEF6;
     border-radius: 8px;
-    padding: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
     flex: 1 1 300px;
     max-width: 400px;
     min-width: 250px;
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 
 
 .card-content2 > i {
-    background-color: #FDFDE4;
+    background-color: #f3e6db;
     font-size: 30px;
     color: #686868;
     margin-top: 10px;
@@ -570,8 +573,8 @@ nav ul li a:hover {
 
 .card-content2 > p {
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 17px;
     color: #512F2F;
     margin-bottom: 5px;
     margin-top: 15px;
