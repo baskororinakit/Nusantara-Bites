@@ -30,6 +30,15 @@ img {
   display: block;
 }
 
+.hero-content > p, .testimoni > p, .card-section > p, .menu-section > p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+    word-break: break-word;
+    /* font-size: 1.1rem; */
+}
+
 /* Header & Nav */
 .main-container {
     width: 100%;
@@ -49,12 +58,25 @@ nav {
     height: 76px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo h2 {
     color: white;
-    font-family: 'Playwrite HU', sans-serif, Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 nav ul {
@@ -524,7 +546,7 @@ nav ul li a:hover {
     padding-block: 6rem;
     background-color: #EFEFEF;
     text-align: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .testimoni > h2 {
@@ -535,31 +557,42 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+.testimoni > p {
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #474747;
+    /* margin-bottom: 30px; */
+}
+
 .card-testi { /* keseluruhan cardnya */
+    /* background-color: orange; */
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1400px;
+    max-width: 1200px;
     padding: 2rem;
     margin: auto;
     border-radius: 10px;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .card-content2 { /* Isi cardnya */
     text-align: left;
     background-color: #FEFEF6;
     border-radius: 8px;
-    padding: 2rem 1rem;
-    margin-top: 2rem;
-    flex: 1 1 300px;
-    max-width: 400px;
+    padding: 2rem 2rem;
+    /* margin-top: 3rem; */
+    width: calc(40% - 0.8rem);
+    /* min-height: 240px; */
     min-width: 250px;
-    box-sizing: border-box;  
+    box-sizing: border-box;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 .card-content2 > i {
     background-color: #f3e6db;
@@ -575,7 +608,7 @@ nav ul li a:hover {
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 17px;
-    color: #512F2F;
+    color: #474747;
     margin-bottom: 5px;
     margin-top: 15px;
 }

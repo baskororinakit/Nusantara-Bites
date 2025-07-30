@@ -1,5 +1,13 @@
 /* MEDIA QUERY TAB & MOBILE */
-@media screen and (max-width: 798px) {
+@media screen and (max-width: 798px) { /* Media query untuk Tab */
+    /* Responsive font size untuk mobile */
+    .hero-content > p, .testimoni > p, .card-section > p, .menu-section > p, .reserv-content > p {
+        max-width: 95vw;
+        /* font-size: 1rem; */
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
     nav {
         /* display: flex; */
         /* justify-content: space-between; */
@@ -40,6 +48,10 @@
         /* background-color: tomato; */
     }
 
+    .logo img {
+        display: none; /* Hide logo image on mobile */
+    }
+
     .nav ul li a{
         cursor: none;
     }
@@ -70,8 +82,7 @@
         gap: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.08);
         transform: translateX(0);
-        
-    }
+}
 
     nav ul.show li {
         width: 100%;
@@ -84,4 +95,16 @@
         box-sizing: border-box;
     }
 
+}
+
+@media screen and (max-width: 480px) { /* Media query untuk Mobile */
+    .card-testi {
+        max-width: 1400px;
+    }
+
+    .card-content2 {
+        padding: 1rem;
+        width: 100%;
+        min-height: 250px;
+    }
 }
