@@ -22,6 +22,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
     />
+    <link rel="stylesheet" href="aos-master/aos.css">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/media-query.css" />
   </head>
@@ -64,12 +65,12 @@
       <div class="hero-overlay">
         <div class="hero">
           <div class="hero-content">
-            <h1>Nusantara Bites</h1>
-            <p>
+            <h1 data-aos="fade-down">Nusantara Bites</h1>
+            <p data-aos="fade-down">
               Nikmati kelezatan cita rasa Nusantara dalam setiap gigitan. Dari
               rempah-rempah yang kaya hingga sajian autentik khas Indonesia
             </p>
-            <div class="button">
+            <div data-aos="fade-down" class="button">
               <div class="menu">
                 <i class="ph ph-fork-knife"></i>
                 <a href="#menu" class="btn-menu">Menu</a>
@@ -85,12 +86,12 @@
     </section>
     <!-- SECTION CARD -->
     <section class="card-section">
-      <h2>Kenapa Memilih Nusantara Bites ?</h2>
-      <p>
+      <h2 data-aos="fade-down">Kenapa Memilih Nusantara Bites ?</h2>
+      <p data-aos="fade-down">
         Nikmati keunikan rasa khas Indonesia yang diracik dengan sentuhan
         modern, hanya di satu tempat Nusantara Bites.
       </p>
-      <div class="card-content">
+      <div data-aos="fade-down" class="card-content">
         <div class="card">
           <i class="ph ph-globe-simple"></i>
           <h3>Kualitas Terbaik</h3>
@@ -222,5 +223,12 @@
       </div>
     </section>
     <script src="js/main.js"></script>
+    <script src="aos-master/aos.js"></script>
+    <script>
+      AOS.init({
+        // duration: 400,
+        once: true, // Animations only happen once
+      });
+    </script>
   </body>
 </html>
