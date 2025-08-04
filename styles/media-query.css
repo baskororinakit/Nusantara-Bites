@@ -1,5 +1,5 @@
 /* MEDIA QUERY TAB & MOBILE */
-@media screen and (max-width: 798px) { /* Media query untuk Tab */
+@media screen and (max-width: 768px) { /* Media query untuk Tab */
     /* Responsive font size untuk mobile */
     .hero-content > p, .testimoni > p, .card-section > p, .menu-section > p, .reserv-content > p {
         max-width: 95vw;
@@ -7,27 +7,10 @@
         padding-left: 8px;
         padding-right: 8px;
     }
-
-    nav {
-        /* display: flex; */
-        /* justify-content: space-between; */
-        padding: 2px 10px;
-        height: 60px;
-        background-color: #978676;
-        flex-wrap: wrap;
-    }
     
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease-in-out;
-    }
+}
 
-    nav ul.hidden {
-        display: none; /* Hide the menu by default */
-    }
-    
+@media screen and (max-width: 840px) { /* Media query untuk Tab */
     .hamburger-icon {
         display: flex; /* Show hamburger icon on mobile */
         align-items: center;
@@ -50,6 +33,26 @@
 
     .logo img {
         display: none; /* Hide logo image on mobile */
+    }
+    
+    nav {
+        /* display: flex; */
+        /* justify-content: space-between; */
+        padding: 2px 10px;
+        height: 60px;
+        background-color: #978676;
+        flex-wrap: wrap;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    nav ul.hidden { /* Ini kalo di hide gak ada animasi tapi kalo gak di hide bug */
+        display: none;
     }
 
     .nav ul li a{
@@ -82,7 +85,7 @@
         gap: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.08);
         transform: translateX(0);
-}
+    }
 
     nav ul.show li {
         width: 100%;
@@ -94,10 +97,36 @@
         display: block;
         box-sizing: border-box;
     }
-
 }
 
-@media screen and (max-width: 480px) { /* Media query untuk Mobile */
+@media screen and (max-width: 480px) { /* Media query untuk Mobile (TESTI SECTION)*/
+    /* Hero section */
+    .hero-content h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+        margin-top: 1rem;
+        padding: 0 1.5rem;
+        text-align: center;
+    }
+
+    .button {
+        flex-direction: column; /* ini bikin tombol jadi turun ke bawah */
+        gap: 10px;
+    }
+
+    .button > .menu,
+    .button > .reserv {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Testi section */
     .card-testi {
         max-width: 1400px;
     }
@@ -106,5 +135,28 @@
         padding: 1rem;
         width: 100%;
         min-height: 250px;
+    }
+
+    nav ul.hidden {
+        display: none; /* Hide the menu by default */
+    }
+}
+
+/* Responsive: 2 kolom di tablet, 1 kolom di mobile (CARD SECTION)*/
+@media (max-width: 900px) {
+    .card {
+        width: calc(50% - 2rem);
+    }
+}
+@media (max-width: 600px) {
+    .card-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+    }
+    .card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
     }
 }

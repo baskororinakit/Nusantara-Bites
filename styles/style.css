@@ -273,16 +273,10 @@ nav ul li a:hover {
 /* Section Card */
 
 .card-section {
-    /* padding: 4rem 1rem; */
     padding-block: 6rem;
     background-color: #EFEFEF;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     text-align: center;
     margin-top: 1rem;
-    /* margin-bottom: 8rem; */
 }
 
 .card-section > h2 {
@@ -302,27 +296,30 @@ nav ul li a:hover {
 }
 
 .card-content { /* keseluruhan cardnya */
-    /* padding-bottom: 2rem; */
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr)); */
     display: flex;
+    flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1400px;
     padding: 2rem;
-    padding-top: 2rem;
     margin: auto;
     border-radius: 10px;
+    padding-top: 3rem;
 }
 
 .card { /* Isi cardnya */
+    text-align: left;
     background-color: #FEFEF6;
     border-radius: 8px;
-    padding: 2rem;
-    flex: 1 1 20%;
-    max-width: 400px;
-    /* margin: auto; */
+    padding: 2rem 2rem;
+    /* margin-top: 3rem; */
+    width: calc(25% - 2rem);
+    min-width: 250px;
+    box-sizing: border-box;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card > i {
