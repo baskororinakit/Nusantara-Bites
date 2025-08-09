@@ -214,7 +214,6 @@ nav ul li a:hover {
     display: flex; /* ini penting banget */
     justify-content: center; /* opsional, biar tombolnya ketengah */
     align-items: center;
-    margin-top: 27px;
     gap: 7px;
     /* padding: 10px 40px; */
 }
@@ -276,7 +275,6 @@ nav ul li a:hover {
     padding-block: 6rem;
     background-color: #EFEFEF;
     text-align: center;
-    margin-top: 1rem;
 }
 
 .card-section > h2 {
@@ -313,7 +311,6 @@ nav ul li a:hover {
     background-color: #FEFEF6;
     border-radius: 8px;
     padding: 2rem 2rem;
-    /* margin-top: 3rem; */
     width: calc(25% - 2rem);
     min-width: 250px;
     box-sizing: border-box;
@@ -353,24 +350,27 @@ nav ul li a:hover {
 /* Reservasi Section */
 
 .reserv-section {
-    padding-block: 6rem;
-    padding: 5rem 10rem;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    background-color: #978676;
+  /* padding: 4rem 1rem; */
+  padding-block: 6rem;
+  background-color: #978676;
 }
 
 .reserv-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 700px;
-    text-align: left;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.reserv-content > h2 {
+/* Teks di kiri */
+.hero-text {
+  flex: 1 1 500px;
+}
+
+.hero-text h1 {
     font-family: 'Playfair Display', sans-serif, Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 3rem;
@@ -378,7 +378,7 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.reserv-content > p {
+.hero-text p {
     font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
@@ -387,7 +387,7 @@ nav ul li a:hover {
     /* text-align: center; */
 }
 
-.section-btn2 {
+.hero-buttons {
     margin-top: 2rem;
     display: flex;
     gap: 1rem;
@@ -430,20 +430,46 @@ nav ul li a:hover {
 .btn-secondary:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-.image-content {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex: 1;
-    max-width: 560px;
-    height: auto;
+/* Gambar di kanan */
+.hero-image {
+  flex: 1 1 500px;
+  text-align: center;
 }
 
-.image-content img {
-    width: 65%;
-    height: auto;
-    object-fit: cover;
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .reserv-section h1,
+  .reserv-section p {
+    text-align: center;
+  }
+  /* Button */
+  .reserv-section .hero-buttons {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-image {
+    display: none;
+  }
+  /* Image */
 }
 
 /* Section Testimoni */
@@ -452,7 +478,6 @@ nav ul li a:hover {
     padding-block: 6rem;
     background-color: #EFEFEF;
     text-align: center;
-    /* margin-top: 1rem; */
 }
 
 .testimoni > h2 {
@@ -490,7 +515,6 @@ nav ul li a:hover {
     background-color: #FEFEF6;
     border-radius: 8px;
     padding: 2rem 2rem;
-    /* margin-top: 3rem; */
     width: calc(40% - 0.8rem);
     /* min-height: 240px; */
     min-width: 250px;
@@ -519,3 +543,10 @@ nav ul li a:hover {
     margin-top: 15px;
 }
 
+.card-content2 > h4 {
+    font-family: 'Poppins', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #512F2F;
+    margin-bottom: 5px;
+}
