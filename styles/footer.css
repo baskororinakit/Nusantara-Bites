@@ -1,0 +1,58 @@
+.footer-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.242), rgba(0, 0, 0, 0.489)), url('../img/background-footer.jpg');
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* h2 footer dan paragraf */
+
+.footer-about p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.footer-about h2 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 26px;
+}
+
+.footer-about {
+    padding: 16px;
+    max-width: 350px;
+    width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+    /* margin: 10px 10px; */
+}
+
+/* Link dan Social Media */
+
+.links-footer a,
+.social-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.links-footer li,
+.social-footer li {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2px;
+    font-size: 14px;
+}
+
+.links-footer h2,
+.social-footer h2 {
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
