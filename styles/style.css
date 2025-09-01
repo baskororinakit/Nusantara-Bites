@@ -389,7 +389,8 @@ nav ul li a:hover {
 
 .hero-buttons {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    /* margin-left: 2rem; */
     align-items: center;
     margin-top: 2rem;
     display: flex;
