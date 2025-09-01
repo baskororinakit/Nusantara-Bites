@@ -97,6 +97,13 @@
         display: block;
         box-sizing: border-box;
     }
+
+    /* Responsive section reservasi */
+    .reserv-content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
 }
 
 /* Responsive SECTION RESERVASI  */
@@ -123,6 +130,21 @@
   .hero-image {
     display: none;
   }
+
+  .hero-buttons {
+    flex-direction: column; /* ini bikin tombol jadi turun ke bawah */
+    gap: 10px;
+     /* max-width: 400px; */
+    width: 100%;
+    /* max-width: 300px; */
+    justify-content: center;
+    text-align: center;
+  }
+
+    .reserv-section {
+        padding-bottom: 2rem;
+    }
+
 }
 
 @media screen and (max-width: 480px) { /* Media query untuk Mobile (TESTI SECTION)*/
@@ -177,6 +199,8 @@
         justify-content: center;
         text-align: center;
     } 
+
+
 }
 
 /* Responsive: 2 kolom di tablet, 1 kolom di mobile (CARD SECTION)*/

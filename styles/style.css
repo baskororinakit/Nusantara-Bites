@@ -357,11 +357,12 @@ nav ul li a:hover {
 
 .reserv-content {
   max-width: 1200px;
-  margin: auto;
   display: flex;
   align-items: center;
+  /* background-color: #512F2F; */
   justify-content: space-between;
   gap: 2rem;
+  margin-left: 47px;
   flex-wrap: wrap;
 }
 
