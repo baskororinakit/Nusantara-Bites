@@ -99,6 +99,46 @@
     }
 }
 
+/* Responsive SECTION RESERVASI  */
+@media (max-width: 768px) {
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+    .reserv-section h1,
+    .reserv-section p {
+        text-align: center;
+    }
+
+   .hero-buttons {
+        flex-direction: column; /* ini bikin tombol jadi turun ke bawah */
+        gap: 10px;
+        /*  max-width: 400px; */
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        text-align: center;
+    } 
+    
+    .btn-primary {
+       text-align: center;
+
+
+   }
+
+   .btn-secondary {
+       text-align: center;
+   }
+
+
+  .hero-image {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) { /* Media query untuk Mobile (TESTI SECTION)*/
     /* Hero section */
     .hero-content h1 {
