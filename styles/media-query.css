@@ -108,6 +108,34 @@
 
 /* Responsive SECTION RESERVASI  */
 
+@media (max-width: 1164px) {
+  .hero-image {
+    display: none;
+  }
+
+  .reserv-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    flex: 1 1 100%;
+    /* background-color: tomato; */
+  }
+
+  .hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  /* background-color: #b06016; */
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center !important;
+}
+}
+
+
 @media (max-width: 900px) {
     .reserv-section h1,
     .reserv-section p {
