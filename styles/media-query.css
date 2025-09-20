@@ -27,7 +27,7 @@
     
     .logo h2 {
         font-size: 16px;
-        padding-left: 10px;
+        /* padding-left: 10px;   */
         /* background-color: tomato; */
     }
 
@@ -93,7 +93,7 @@
     }
 
     nav ul.show li a {
-        padding-left: 24px;
+        padding-left: 28px;
         width: 100%;
         display: block;
         box-sizing: border-box;

@@ -1,6 +1,21 @@
 /* Section Contact */
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4rem 2rem; 
+    gap: 2rem;
+    background-color: #e8e8e8;
+}
 
-
+.contact-form {
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 34px 24px;
+    border-radius: 10px;
+}
 
 /* Footer */
 .footer-container {

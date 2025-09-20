@@ -7,7 +7,7 @@
 
 body {
     /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: #EFEFEF;
+    background-color: #e8e8e8;
     /* background-color: #978676; */
 
     margin: 0;
@@ -46,6 +46,7 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     background-color: #978676;
+    backdrop-filter: blur(10px);
 }
 
 
@@ -128,7 +129,7 @@ nav ul li a:hover {
 }
 
 .btn-login {
-    background-color: #EFEFEF;
+    background-color: #e8e8e8;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.2s ease;
@@ -273,7 +274,7 @@ nav ul li a:hover {
 
 .card-section {
     padding-block: 6rem;
-    background-color: #EFEFEF;
+    background-color: #e8e8e8;
     text-align: center;
 }
 
@@ -457,7 +458,7 @@ nav ul li a:hover {
 
 .testimoni {
     padding-block: 6rem;
-    background-color: #EFEFEF;
+    background-color: #e8e8e8;
     text-align: center;
 }
 
