@@ -294,6 +294,19 @@
   }
 }
 
+/* Ensure the mobile menu shows when the `.show` class is present.
+   There are multiple `.hidden`/`.show` rules in this file for different
+   breakpoints; this rule guarantees `.show` wins when both apply. */
+nav ul.show {
+  display: flex !important;
+  transform: translateX(0) !important;
+  position: fixed !important;
+  left: 0 !important;
+  top: 60px !important;
+  opacity: 1 !important;
+  z-index: 9999 !important;
+}
+
 @media (max-width: 870px) {
   .footer-container {
     padding: 1.2rem 0.5rem;

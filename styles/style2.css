@@ -3,21 +3,151 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 4rem 2rem; 
+        padding: 4rem 2rem;
     gap: 2rem;
     background-color: #e8e8e8;
 }
 
+/* Prevent horizontal overflow on small screens by stacking columns
+     and making children responsive. */
+@media (max-width: 900px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        padding: 2.5rem 1rem;
+        gap: 1.25rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0 0.5rem;
+    }
+
+    .contact-left h1 {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-item > p,
+    .contact-item > span {
+        margin-left: 0.5rem;
+    }
+}
+
+/* Extra safety: ensure inputs and other inline elements don't exceed container */
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* Contact Section - Left */
+.contact-left {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.contact-left h4 {
+    font-size: 16x;
+    font-weight: 400;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    letter-spacing: 2px;
+}
+
+.contact-left span {
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-left h1{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+.contact-left p {
+    font-size: 14px;
+    color: #6c6c6c;
+    line-height: 1.5;
+}
+
+.contact-details { /* Contact Section - Icon dan teks */
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item > span { /* teks dari email dll*/
+    color: #6c6c6c;
+    font-weight: 400;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.contact-item > p { /* isi teks dari email dll*/
+    font-size: 14px;
+    /* margin-top: 4px; */
+    color: #333;
+    margin-left: 32px;
+}
+
+/* Icon dari contact */
+.contact-item i {
+    color: #15353e  ;
+    vertical-align: middle;
+    font-size: 24px;
+}    
+
+/* Contact Section - Right */
+.contact-right  {
+    /* background-color: tomato; */
+}
+
+
 .contact-form {
-    background-color: #EFEFEF;
+    /* background-color: #EFEFEF; */
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 34px 24px;
+    /* padding: 34px 24px; */
+    max-width: 400px;
     border-radius: 10px;
 }
 
-/* Footer */
+.contact-form input {
+    border: none;
+    border-bottom: #15353e 1px solid;
+}
+
+.contact-form input:focus {
+    outline: none;
+    border-bottom: 2px solid #15353e ;
+}
+
+.contact-form {
+    max-width: 500px;
+}
+
+
+/* Footer Section*/
 .footer-container {
     background-color: #978676;
     padding: 16px 24px;
