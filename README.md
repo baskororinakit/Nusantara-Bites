@@ -73,14 +73,6 @@ If you'd like to add features, fix bugs, or improve the design:
 
 ------------------------------------------------------------------------
 
-## 📜 License
-
-This project currently does not have a specific license.\
-Feel free to use or modify it --- just include credit if you're using
-major parts of the project.
-
-------------------------------------------------------------------------
-
 ## 📨 Contact
 
 Got ideas, suggestions, or questions?\
