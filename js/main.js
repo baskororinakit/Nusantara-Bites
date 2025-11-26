@@ -21,3 +21,17 @@ menuLinks.forEach(link => {
         }
     };
 });
+
+// Alert for "Send message" button
+function showAlert() {
+swal({
+    title: "Berhasil!",
+    text: "Pop-up berhasil ditampilkan",
+    icon: "success",
+    button: true
+    });
+
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+}

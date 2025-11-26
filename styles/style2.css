@@ -132,19 +132,61 @@
     border-radius: 10px;
 }
 
+/* ====== INPUT STYLE ====== */
 .contact-form input {
-    border: none;
-    border-bottom: #15353e 1px solid;
+  width: 250px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid #333333;
+  font-size: 12px;
+  color: #333333;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
+/* Placeholder warna abu gelap soft */
+.contact-form input::placeholder {
+  color: rgba(51, 51, 51, 0.6);
+}
+
+/* Hover */
+.contact-form input:hover {
+  border-bottom-color: #555555;
+}
+
+/* Focus animasi garis */
 .contact-form input:focus {
-    outline: none;
-    border-bottom: 2px solid #15353e ;
+  border-bottom-color: #000000;
+  transform: scale(1.01);
 }
 
-.contact-form {
-    max-width: 500px;
+.btn-submit {
+  padding: 14px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  letter-spacing: 1px;
 }
+
+/* Hover */
+.btn-submit:hover {
+  background: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* Click */
+.btn-submit:active {
+  transform: scale(0.97);
+}
+
 
 
 /* Footer Section*/
