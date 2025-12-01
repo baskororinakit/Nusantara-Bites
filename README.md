@@ -7,6 +7,8 @@ interface.\
 Perfect for learning, experimenting, or as a foundation for simple web
 projects.
 
+- 🌴Preview: https://baskororinakit.github.io/Nusantara-Bites/
+
 ------------------------------------------------------------------------
 
 ## ✨ Key Features
@@ -80,6 +82,4 @@ Open an **Issue** or reach out directly via GitHub: **@baskororinakit**
 
 ------------------------------------------------------------------------
 
-Thanks for visiting!\
-Hope Nusantara Bites becomes a small step toward your next big project
-🍽️🔥
+Thanks for visiting😄!\
