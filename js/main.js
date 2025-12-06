@@ -2,10 +2,13 @@ const menuList = document.getElementById("menu-list");
 const listIcon = document.getElementById("list-icon");
 const menuLinks = document.querySelectorAll("a");
 
+
 listIcon.addEventListener("click", () => {
     menuList.classList.toggle("show");
     menuList.classList.toggle("hidden");
+    listIcon.classList.toggle("open");
 });
+
 
 menuLinks.forEach(link => {
     link.onclick = function(e) {
@@ -18,20 +21,36 @@ menuLinks.forEach(link => {
             }
             menuList.classList.remove("show");
             menuList.classList.add("hidden");
+            listIcon.classList.remove("open");
         }
     };
 });
 
-// Alert for "Send message" button
-function showAlert() {
-swal({
-    title: "Berhasil!",
-    text: "Pop-up berhasil ditampilkan",
-    icon: "success",
-    button: true
-    });
+// Handle contact form submission with validation
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        // Use built-in form validation
+        if (!contactForm.checkValidity()) {
+            // Show browser validation messages
+            contactForm.reportValidity();
+            return;
+        }
 
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("message").value = "";
+        // All fields valid — show SweetAlert and clear the form
+        if (typeof swal === 'function') {
+            swal({
+                title: 'Berhasil!',
+                text: 'Pesan berhasil dikirim',
+                icon: 'success',
+                button: true
+            });
+        } else {
+            // Fallback if SweetAlert isn't loaded
+            alert('Pesan berhasil dikirim');
+        }
+
+        contactForm.reset();
+    });
 }
