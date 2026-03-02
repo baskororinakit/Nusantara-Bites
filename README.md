@@ -7,7 +7,7 @@ interface.\
 Perfect for learning, experimenting, or as a foundation for simple web
 projects.
 
-- 🌴Preview: https://baskororinakit.github.io/Nusantara-Bites/
+- 🌴Preview: https://nusantara-bite.vercel.app/
 
 ------------------------------------------------------------------------
 
